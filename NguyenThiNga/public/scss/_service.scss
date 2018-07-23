@@ -1,0 +1,68 @@
+#service{
+    background-color: #eeeeee;
+    .ser-title{
+        width: 100%;
+        padding: 60px 0;
+        display: block;
+        @extend %menu-p;
+        p:first-child{
+            cursor: pointer;
+            font-size: 20px !important;
+        }
+        p:nth-child(2){
+            padding: 15px 0 32px 0;
+            cursor: pointer;
+            font-size: 12px !important;
+            letter-spacing: 1px;
+        }
+       span{
+           font-size: 16px;
+           font-family: Meryo !important;
+           color: #555555;
+        }
+    }
+    .ser-main{
+        padding-bottom: 3rem;
+    }
+    .ser-main div.col-4{
+        .cha{
+            background-image: url('../images/bg-service.png');
+            background-size: contain;
+            width: 210px;
+            height: 216px;
+            background-repeat: no-repeat;
+            padding: 7px;
+            margin: auto;
+            .nd{
+                text-align: center;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                transition: all .5s;
+                justify-content: center;
+                .hide{
+                    display: none;
+                }
+                a.btn-blue{
+                    @extend %btn-blue;
+                    padding: 5px 20px 5px 10px;
+                    display: inline-block;                
+                    margin: 0 auto;
+                }
+                &:hover{
+                    background-color: #0e5b9a;
+                    p{color: #fff !important;}
+                    .hide{display: inline-block};
+                    .show{display: none};
+                    .btn-blue{
+                        background-color: #fff;
+                        color: #0f5c9b;
+                        &::before{
+                            content: url('../images/icon-right1.png');
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

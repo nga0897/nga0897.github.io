@@ -1,0 +1,27 @@
+#topbar{
+    border-top: 3px solid #0f5c9b;
+        header{ 
+        padding: 20px 8px;
+        div.col-7.phone{
+            padding-top: 18px;
+            a{
+                display: block;
+                &:before{
+                content: url('../images/icon-phone-blue.png');
+                }
+            }
+            span{
+                font-family: "Meiryo" !important;
+                color:#000000;
+                font-size: 10px;
+            }
+            .email{
+                // width: 269px;
+                @extend %btn-mail;  
+            }
+        }
+        .topnav{
+            display: none;
+        }
+    }
+}

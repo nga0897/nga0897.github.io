@@ -1,0 +1,28 @@
+footer .aa{
+    background-color: #cccccc;
+    .menu1{
+        display: block;
+        padding: 30px 102px 30px;
+        li{
+            padding-bottom: 9px;
+            display: inline-block;
+            a{
+                border-right: 0.05rem solid #898989;
+                display: inline-block;
+                padding: 0px 36px;
+                p{
+                    font-family: 'Meriyo' !important;
+                    font-size: 14px;
+                    color:#222222;
+                }
+            }
+            a#bor-l {
+                margin-left: -22px;
+                border-left: 1px solid #898989;
+                }       
+            }
+        li:first-child a{
+            border-left: 0.05rem solid #898989;
+        }
+    }    
+}

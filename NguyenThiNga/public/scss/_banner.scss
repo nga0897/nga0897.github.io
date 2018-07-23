@@ -1,0 +1,14 @@
+.banner{
+    background-image: url('../images/banner.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    a{
+        display: inline-block;
+        border:1px solid #ffffff;
+        padding: 9px 14px;
+        font-size: 30px;
+        color: #ffffff;
+        margin:160px auto;
+    }
+}

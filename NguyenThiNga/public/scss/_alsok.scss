@@ -1,0 +1,33 @@
+main #alsok{
+   .alsok-img{
+       margin-left: -45px;
+       position: relative;
+       .img1{
+            display: block;
+        }
+       .img2{
+            top: 43%;
+            right: 0;
+            position: absolute;
+        }
+    }
+    .alsok-r{ 
+        margin: 52px 0;
+        padding: 0 60px 0;
+        p{
+            font-size: 20px;
+            cursor: pointer;
+            padding-bottom: 38px;
+            line-height: 28px;
+        }
+        span{
+            font-family: Meiryo;
+            color: #545454;
+            font-size: 16px;
+        }
+        a img{
+            padding-top: 5px;
+        }
+    }
+}
+

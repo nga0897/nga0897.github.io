@@ -1,0 +1,201 @@
+@import 'fonts';
+
+
+$Mei: 'Meiryo';
+$Mei-B:'Meiryob';
+$Din-B:'Din-Bold';
+$Shin-Re:'ShinGoPro-Regular';
+$Shin-B:'ShinGoPro-DeBold';
+$Hira-W3:'HiraKakuProN-W3';
+$Hira-W6:'HiraKakuProN-W6';
+$MyriPro-Re:'MyriadPro-Regular';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-weight: 500;
+    font-family: $Mei,sans-serif;
+    font-size: 14px;
+    background-color: #ffffff;
+    color:#000;
+    min-width: 950px;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+@for $i from 1 through 12{
+    .col-#{$i}{
+        flex: 0 0 (100%*$i/12);
+        max-width: (100%*$i/12);
+    }
+}
+.wrap-page{
+    max-width: 950px;
+    margin: 0 auto;
+}
+.text-center{
+    text-align: center;
+}
+.mar-auto{
+    margin: auto;
+}
+
+a{
+    text-decoration: none;
+}
+.font-10{
+    font-size: 10px;
+}
+span{
+    font-family: $Shin-Re;
+}
+p{
+    font-family: $Shin-B;
+}
+span#colorye{
+    color:yellow !important;
+}
+.hidden{
+    visibility: hidden;
+}
+%btn-mail{
+    padding: 14px;
+    transition: all .5s;
+    margin: auto;
+    background-color: #ffed4d;
+    a{
+        font-size: 14px;
+        color: #fd7e00;
+    }
+    p{
+        font-family: $Mei-B !important;
+        margin-left: 44px;
+    }
+    a:before{
+        margin-top: 2px;
+        margin-left: 8px;
+        background-repeat: no-repeat;
+        position: absolute;
+        width: 20px;
+        height: 16px;
+        content: '';
+        background-image: url(../images/icon-email.png);
+    }
+    &:hover{
+        opacity: .8;
+    }
+}
+%menu-p{
+    p:first-child{
+        font-family: $Shin-B; 
+        color: #000;
+        font-size: 14px ;
+    }
+    p:nth-child(2){
+        color: #0e5b9a;
+        font-family: $Din-B !important;
+        font-size: 12px ;
+        text-transform: uppercase;
+    }
+}
+%btn-blue{
+    transition: all .5s;
+    background:#0f5c9b;
+    color: #ffffff;
+    font-size: 16px;
+    font-family: $Mei;
+    &:before{
+        content: url('../images/icon-right.png');
+        padding-right: 10px;
+    }
+    &:hover{
+        opacity: 0.8
+    }
+}
+%title-blue{
+    border: 0.01rem solid #fff;
+    color: #fff;    
+}
+%phone{
+    padding-top: 18px;
+    display: block;
+    a{
+        font-family: $Mei;
+    }
+}
+
+#top{
+    margin-right: 202px;
+    float: right;
+    margin-top: -174px;
+    width: 80px;
+    cursor: pointer;
+    padding: 14px 5px 0px;
+    background-color: #fff;
+    color: #0f5c9b;
+    height: 80px;
+    font-weight: 700;
+    .icon{
+        text-align: center;
+    }
+    .icon:before{
+        padding: 10px 0px;
+        content: url('../images/pagetop.png');
+    }
+}a, a:hover, a:focus {
+    text-decoration: none;
+    color: #000;
+}
+.img-responsive{
+    max-width: 100%;
+    height: auto;
+}
+.bar-block{
+    background-color: #0e5b9a;
+    display: none;
+    .menu-li{
+        width: 100%;
+        padding: 59px 39px;
+        .bar-item{
+            padding: 10px 0;
+            border-top: dotted;
+            white-space: normal;
+            display: block;
+            color: #ffffff;
+            font-size: 20px;
+            .icon-r{
+                font-size: 26px;
+                margin-top: -4px;
+                margin-right: 8px;
+                &:before{
+                    content: url('../images/icon-right.png');
+                }
+            }
+        }
+        #last{
+           border-bottom: dotted; 
+        }
+    }
+}
+
+@import 'header';
+@import 'menu'; 
+@import 'banner';
+@import 'news';
+@import 'service';
+@import 'alsok';
+@import 'contact';
+@import 'footer';
+@import 'copyright';
+@import 'tv.scss';
+@import 'responsive';
