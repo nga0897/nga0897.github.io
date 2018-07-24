@@ -208,7 +208,7 @@ div#services .table-content td { background-color: #fff; color: #111111; padding
 
 /* --End main-service -- */
 /*  */
-.slide { height: 300px; }
+.slide { padding: 0 15px; height: 300px; }
 .slide p { margin-bottom: 60px; padding: 1px 37px; border: 1px solid #0f5c9b; color: #0f5c9b; font-size: 24px; }
 .slide span { font-size: 16px; font-family: Meiryo; color: #525252; }
 .slide span a { color: #0f5c9a; font-size: 22px; }
@@ -289,7 +289,7 @@ div#services .table-content td { background-color: #fff; color: #111111; padding
   #services .sers-title span { font-family: "HiraKakuProN-W6" !important; font-size: 28px !important; color: #555555 !important; }
   #services .sers-title img { padding: 0px !important; }
   #services .sers-title p { padding: 0 30px; color: #555555 !important; font-family: "HiraKakuProN-W3" !important; font-size: 22px !important; }
-  #services .ser.col-8 { flex: 0 0 100%; max-width: 100%; }
+  #services .ser.col-8 { flex: 0 0 100%; max-width: 100% !important; }
   #services .ser.col-8 p { color: #555555 !important; font-family: Hira-W3 !important; font-size: 14px !important; }
   #services .table-content { padding: 0 15px; }
   /* --End services-- */
@@ -297,12 +297,13 @@ div#services .table-content td { background-color: #fff; color: #111111; padding
   .bg-service div#main-service { padding: 15px; margin-top: 66px; }
   .bg-service div#main-service .sers-title img { padding: 0; }
   .bg-service div#main-service .ser .col-8 { padding-bottom: 25px; flex: 0 0 100%; max-width: 100%; }
+  .bg-service div#main-service .ser .col-8 .ser-title { padding: 15px 0 0 15px; }
   .bg-service div#main-service .ser .col-8 a::before { margin-left: 50px; }
   .bg-service div#main-service .ser .col-8 p { margin-left: 0; }
-  .bg-service div#main-service .ser .col-8 .ser-phone { width: 87%; margin: auto; }
-  .bg-service div#main-service .ser .col-8 .ser-mail { width: 87%; margin-top: 15px; }
+  .bg-service div#main-service .ser .col-8 .ser-phone { width: 91%; margin: auto; }
+  .bg-service div#main-service .ser .col-8 .ser-mail { width: 91%; margin-top: 15px; }
   .bg-service div#main-service .ser .col-4 { flex: 0 0 100%; max-width: 100%; text-align: center; }
-  .bg-service div#main-service .ser .col-4 img { width: 85%; padding: 0 0 19px 0; }
+  .bg-service div#main-service .ser .col-4 img { width: 91%; padding: 0 0 11px 0; }
   /* -- End bg-service-- */
   /* ---Start slide- */
   .slide p { margin: 20px !important; }

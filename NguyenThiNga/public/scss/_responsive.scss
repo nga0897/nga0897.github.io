@@ -193,7 +193,7 @@
         }
         .alsok-r{
           margin: 0 !important;
-          padding: 0 15px;
+          padding: 0 15px ;
           line-height: 25px;
           text-align: center;
           order:1;
@@ -285,7 +285,7 @@ main .line{
   }
   .ser.col-8{
     flex: 0 0 100%;
-    max-width: 100%;
+    max-width: 100% !important;
     p{
       color: #555555 !important;
       font-family: Hira-W3 !important;
@@ -312,6 +312,9 @@ main .line{
       padding-bottom: 25px;
       flex: 0 0 100%;
       max-width: 100%;
+      .ser-title{
+      padding: 15px 0 0 15px;
+    }
       a::before{
         margin-left: 50px;
       }
@@ -319,11 +322,11 @@ main .line{
         margin-left: 0;
       }
       .ser-phone{
-        width: 87%;
+        width: 91%;
         margin: auto;
       }
       .ser-mail{
-        width: 87%;
+        width: 91%;
         margin-top: 15px;
       }
     }
@@ -332,8 +335,8 @@ main .line{
       max-width: 100%;
       text-align: center;
       img{
-        width: 85%;
-        padding: 0 0 19px 0;
+        width: 91%;
+        padding: 0 0 11px 0;    
       }
     }
   }
