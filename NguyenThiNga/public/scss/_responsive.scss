@@ -6,6 +6,9 @@
   .wrap-page{
     width: 100%;
     }
+    #pagetop{
+      display: none !important;
+    }
     /* start header */
     #topbar header{
       .col-5{
@@ -26,13 +29,13 @@
         display: block;
         border-radius: 11px;
         width: 62px;
-        padding: 14px;
+        padding: 14px 0 0 11px;
         height: 58px;
         background-color: #0f5c9b;
         margin-left: 31px;
       }
       .fa-fas::before{
-          content: url('../images/menuresX.png');
+          content: url('../images/menures.png');
         }  
       .icon-X{
         cursor: pointer;
@@ -40,13 +43,13 @@
         display: block;
         border-radius: 11px;
         width: 62px;
-        padding: 11px;
+        padding: 14px;
         height: 58px;
         background-color: #0f5c9b;
         margin-left: 31px;
       }
       .icon-X::before{
-          content: url('../images/menures.png');
+          content: url('../images/menuresX.png');
       }  
       /* End Menu-resposive */
     }
@@ -56,43 +59,76 @@
         display: none;
     }
     div.bar-block{
+      display: none;
+    }
+     div.bar-block1{
       display: block;
     }
-    .bar-block{
+  
+        .nav-sm{
         position: absolute !important;
         z-index: 9999 ;
         width: 100%;
         min-height: 826px;
-      }
-    /* end menu */
-    /* Start Banner */
-    .banner{
-      position: relative;
-      a{
-        margin: 131px 16px;
-      }
+        background-color: #0e5b9a;
+        display: none;
+        .menu-li{
+            width: 100%;
+            padding: 59px 39px;
+            .bar-item{
+                padding: 10px 0;
+                border-top: dotted;
+                white-space: normal;
+                display: block;
+                color: #ffffff;
+                font-size: 20px;
+                .icon-r{
+                    font-size: 26px;
+                    margin-top: -4px;
+                    margin-right: 8px;
+                    &:before{
+                        content: url('../images/icon-right.png');
+                    }
+                }
+            }
+            #last{
+              border-bottom: dotted; 
+            }
+        }
     }
-    /* End Banner */
-    /* start new */
-    .new-content{
-      margin: 42px 19px;
-      .new-l{
-        border-right:none;
-        p:first-child{
-          font-size: 30px !important;
-          font-family: $Hira-W6;
+        /* end menu */
+        /* Start Banner */
+        .banner{
+          position: relative;
+          a{
+            text-align: center;
+            padding: 15px 30px;
+            margin: 131px 16px;
+            
+          }
         }
-        p:nth-child(2){
-          font-family:$MyriPro-Re !important;
-          font-size: 16px!important;
-          cursor: pointer;
-        }
-        a{
-          position: absolute;
-          top: 927px;
-          margin: 0px -79px;
-        }
-      }
+        /* End Banner */
+        /* start new */
+        .new-content{
+          position: relative;
+          margin: 42px 19px;
+          .new-l{
+            border-right:none;
+            p:first-child{
+              font-size: 30px !important;
+              font-family: $Hira-W6;
+            }
+            p:nth-child(2){
+              font-family:$MyriPro-Re !important;
+              font-size: 16px!important;
+              cursor: pointer;
+            }
+            a{
+              position: absolute !important;
+              top: 427px !important;
+              margin: 15px -79px;
+            }
+          }
       .col-9{
         flex: 0 0 100%;
         max-width: 100%;
@@ -133,7 +169,7 @@
           width:90%;
           height: 90%;
         }
-      }
+      } 
     }
     /* End service */
     /* Start Alsok */
@@ -141,23 +177,23 @@
       flex:  0 0 100%;
       max-width: 100%;
       a img{
-        padding: 0 20px
+        padding: 0 13px;
       }
         .col-6.alsok-img{
           flex: 0 0 100%;
           max-width: 100%;
           order:2;
+          margin-left: -12px !important;
           .img1{
-            padding: 0 44px;
             width: 100%
           }
           .img2{
-            width: 25%;
+            width: 26%;
           }
         }
-        .col-6.alsok-r{
-          margin-top: 49px;
-          padding: 0;
+        .alsok-r{
+          margin: 0 !important;
+          padding: 0 15px;
           line-height: 25px;
           text-align: center;
           order:1;
@@ -187,16 +223,21 @@
         max-width: 100%;
       }
     }
-    main #contact .contact-r .col-4 .email{
-      margin-top: 0px;
-      margin-bottom: 36px;
-      // width: 64%;
-      p{
-        margin-left: 0;
+    main #contact {
+      .contact-r {
+        padding-left: 15px;
+        padding-right: 15px;
+        .col-4.mar-mail{
+          margin-top: 66px;
+          margin-bottom: 85px;
+          p{
+            margin-left: 0;
+          }
+        }
       }
     }
     /* end contact */
-    /* StARt footer */
+    /* Start footer */
       footer{
       .aa {
         .menu1 {
@@ -317,17 +358,7 @@ main .line{
     padding: 14px 5px;
   }
 }
-@media screen and  (max-width:320px){
-/*start header */
-  #topbar header {
-    img{
-      width: 85% !important;
-    }
-  }
-  .new-content .new-l a{
-    top: 1142px;
-  }
-/*end service */
+@media screen and (max-width:500px){
 /*start service */
   #service{
     .ser-main{
@@ -346,6 +377,19 @@ main .line{
       }
     }
   }/*end service */
+}
+@media screen and  (max-width:350px){
+/*start header */
+  #topbar header {
+    img{
+      width: 85% !important;
+    }
+  }
+  .new-content .new-l a{
+    top: 482px !important;
+  }
+/*end service */
+
   /* Start contact */
   main #contact {
     .contact-r .col-4 .mar-mail{
@@ -358,15 +402,7 @@ main .line{
     }
   }
   /* End contact */
-  /* Start New */
-  .new-content{
-    .new-l{
-      a{
-        top:1110px;
-      }
-    }
-  }
-  /* End New */
+ 
   /* ------------tv - */
   .bg-service div#main-service .ser .col-8 a::before{
         margin-left: 0px;

@@ -17,7 +17,7 @@ main #contact{
     }
     .contactcontent{
         text-align: center;
-        margin: 0 auto;
+        padding:0 18px;
         width: 100%;
         span{
             letter-spacing: 1px;
@@ -41,7 +41,7 @@ main #contact{
         }
         span{
             color:#ffffff;
-            font-size:12px;
+            font-size:11px;
         }
     }
     .col-4.mar-mail{
@@ -50,7 +50,7 @@ main #contact{
         .email{
             margin-top: -56px;
             @extend %btn-mail; 
-            width: 276px;
+            width: 269px;
             height: 50px;
             }
         }

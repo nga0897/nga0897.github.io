@@ -74,20 +74,11 @@ main #contact .contacttext p { border: 0.01rem solid #fff; color: #fff; }
 main #contact .contact-r .col-4.phone a, .bg-service .ser .col-8 .ser-phone a { padding-top: 18px; display: block; }
 main #contact .contact-r .col-4.phone a a, .bg-service .ser .col-8 .ser-phone a a { font-family: "Meiryo"; }
 
-#top { margin-right: 202px; float: right; margin-top: -174px; width: 80px; cursor: pointer; padding: 14px 5px 0px; background-color: #fff; color: #0f5c9b; height: 80px; font-weight: 700; }
-#top .icon { text-align: center; }
-#top .icon:before { padding: 10px 0px; content: url("../images/pagetop.png"); }
-
 a, a:hover, a:focus { text-decoration: none; color: #000; }
 
 .img-responsive { max-width: 100%; height: auto; }
 
-.bar-block { background-color: #0e5b9a; display: none; }
-.bar-block .menu-li { width: 100%; padding: 59px 39px; }
-.bar-block .menu-li .bar-item { padding: 10px 0; border-top: dotted; white-space: normal; display: block; color: #ffffff; font-size: 20px; }
-.bar-block .menu-li .bar-item .icon-r { font-size: 26px; margin-top: -4px; margin-right: 8px; }
-.bar-block .menu-li .bar-item .icon-r:before { content: url("../images/icon-right.png"); }
-.bar-block .menu-li #last { border-bottom: dotted; }
+#pagetop { position: fixed; bottom: 50px; right: 40px; z-index: 9999; display: none; cursor: pointer; -moz-border-radius: 50%; -ms-border-radius: 50%; -o-border-radius: 50%; -webkit-border-radius: 50%; }
 
 #topbar { border-top: 3px solid #0f5c9b; }
 #topbar header { padding: 20px 8px; }
@@ -102,6 +93,8 @@ a, a:hover, a:focus { text-decoration: none; color: #000; }
 .menu li a { padding: 0 37px; text-align: center; border-right: 1px solid #dddddd; display: inline-block; color: #000000; }
 .menu li:first-child a { border-left: 1px solid #dddddd; }
 .menu li:hover { border-bottom: 4px solid #dddddd; }
+
+div.bar-block .menu-li { display: none; }
 
 .banner { background-image: url("../images/banner.png"); background-repeat: no-repeat; background-size: cover; background-position: center; }
 .banner a { display: inline-block; border: 1px solid #ffffff; padding: 9px 14px; font-size: 30px; color: #ffffff; margin: 160px auto; }
@@ -118,7 +111,7 @@ a, a:hover, a:focus { text-decoration: none; color: #000; }
 .new-content .new-r span a { color: #000000; text-decoration: underline; }
 
 #service { background-color: #eeeeee; }
-#service .ser-title { width: 100%; padding: 60px 0; display: block; }
+#service .ser-title { width: 100%; padding: 60px 20px; display: block; }
 #service .ser-title p:first-child { cursor: pointer; font-size: 20px !important; }
 #service .ser-title p:nth-child(2) { padding: 15px 0 32px 0; cursor: pointer; font-size: 12px !important; letter-spacing: 1px; }
 #service .ser-title span { font-size: 16px; font-family: Meryo !important; color: #555555; }
@@ -145,14 +138,14 @@ main #alsok .alsok-r a img { padding-top: 5px; }
 main #contact { background-image: url(../images/bg-contact.png); background-position: center; background-repeat: no-repeat; background-size: cover; }
 main #contact .contacttext { text-align: center; margin: 0 205px; }
 main #contact .contacttext p { font-size: 24px; padding: 6px 46px !important; letter-spacing: 2px; margin: 32px 0px; cursor: pointer; }
-main #contact .contactcontent { text-align: center; margin: 0 auto; width: 100%; }
+main #contact .contactcontent { text-align: center; padding: 0 18px; width: 100%; }
 main #contact .contactcontent span { letter-spacing: 1px; font-family: Meiryo; color: #ffffff; font-size: 16px; line-height: 26px; }
 main #contact .contact-r .col-4.phone { padding-bottom: 21px; }
 main #contact .contact-r .col-4.phone a { font-size: 36px; font-family: Din-Bold; color: #ffffff; }
 main #contact .contact-r .col-4.phone a:before { content: url("../images/icon-phone.png"); }
-main #contact .contact-r .col-4.phone span { color: #ffffff; font-size: 12px; }
+main #contact .contact-r .col-4.phone span { color: #ffffff; font-size: 11px; }
 main #contact .contact-r .col-4.mar-mail { margin-top: 85px; margin-bottom: 29px; }
-main #contact .contact-r .col-4.mar-mail .email { margin-top: -56px; width: 276px; height: 50px; }
+main #contact .contact-r .col-4.mar-mail .email { margin-top: -56px; width: 269px; height: 50px; }
 
 footer .aa { background-color: #cccccc; }
 footer .aa .menu1 { display: block; padding: 30px 102px 30px; }
@@ -222,31 +215,38 @@ div#services .table-content td { background-color: #fff; color: #111111; padding
 
 @media screen and (max-width: 768px) { body { min-width: 133px; }
   .wrap-page { width: 100%; }
+  #pagetop { display: none !important; }
   /* start header */
   #topbar header { /* Start Menu-resposive */ /* End Menu-resposive */ }
   #topbar header .col-5 { flex: 0 0 80%; max-width: 80%; }
   #topbar header .col-7 { flex: 0 0 20%; max-width: 20%; }
   #topbar header .phone { display: none; }
-  #topbar header .fa-fas { cursor: pointer; float: right; display: block; border-radius: 11px; width: 62px; padding: 14px; height: 58px; background-color: #0f5c9b; margin-left: 31px; }
-  #topbar header .fa-fas::before { content: url("../images/menuresX.png"); }
-  #topbar header .icon-X { cursor: pointer; float: right; display: block; border-radius: 11px; width: 62px; padding: 11px; height: 58px; background-color: #0f5c9b; margin-left: 31px; }
-  #topbar header .icon-X::before { content: url("../images/menures.png"); }
+  #topbar header .fa-fas { cursor: pointer; float: right; display: block; border-radius: 11px; width: 62px; padding: 14px 0 0 11px; height: 58px; background-color: #0f5c9b; margin-left: 31px; }
+  #topbar header .fa-fas::before { content: url("../images/menures.png"); }
+  #topbar header .icon-X { cursor: pointer; float: right; display: block; border-radius: 11px; width: 62px; padding: 14px; height: 58px; background-color: #0f5c9b; margin-left: 31px; }
+  #topbar header .icon-X::before { content: url("../images/menuresX.png"); }
   /* end header */
   /* menu */
   div.menu-sx { display: none; }
-  div.bar-block { display: block; }
-  .bar-block { position: absolute !important; z-index: 9999; width: 100%; min-height: 826px; }
+  div.bar-block { display: none; }
+  div.bar-block1 { display: block; }
+  .nav-sm { position: absolute !important; z-index: 9999; width: 100%; min-height: 826px; background-color: #0e5b9a; display: none; }
+  .nav-sm .menu-li { width: 100%; padding: 59px 39px; }
+  .nav-sm .menu-li .bar-item { padding: 10px 0; border-top: dotted; white-space: normal; display: block; color: #ffffff; font-size: 20px; }
+  .nav-sm .menu-li .bar-item .icon-r { font-size: 26px; margin-top: -4px; margin-right: 8px; }
+  .nav-sm .menu-li .bar-item .icon-r:before { content: url("../images/icon-right.png"); }
+  .nav-sm .menu-li #last { border-bottom: dotted; }
   /* end menu */
   /* Start Banner */
   .banner { position: relative; }
-  .banner a { margin: 131px 16px; }
+  .banner a { text-align: center; padding: 15px 30px; margin: 131px 16px; }
   /* End Banner */
   /* start new */
-  .new-content { margin: 42px 19px; }
+  .new-content { position: relative; margin: 42px 19px; }
   .new-content .new-l { border-right: none; }
   .new-content .new-l p:first-child { font-size: 30px !important; font-family: "HiraKakuProN-W6"; }
   .new-content .new-l p:nth-child(2) { font-family: "MyriadPro-Regular" !important; font-size: 16px !important; cursor: pointer; }
-  .new-content .new-l a { position: absolute; top: 927px; margin: 0px -79px; }
+  .new-content .new-l a { position: absolute !important; top: 427px !important; margin: 15px -79px; }
   .new-content .col-9 { flex: 0 0 100%; max-width: 100%; }
   .new-content .col-9 .new-r { padding-right: 29px; padding-bottom: 50px; margin-top: -66px; }
   .new-content .col-9 .new-r span { border-top: dotted #cccccc; padding: 15px 5px; font-family: "HiraKakuProN-W3"; font-size: 20px; }
@@ -260,22 +260,23 @@ div#services .table-content td { background-color: #fff; color: #111111; padding
   /* End service */
   /* Start Alsok */
   div#alsok { flex: 0 0 100%; max-width: 100%; }
-  div#alsok a img { padding: 0 20px; }
-  div#alsok .col-6.alsok-img { flex: 0 0 100%; max-width: 100%; order: 2; }
-  div#alsok .col-6.alsok-img .img1 { padding: 0 44px; width: 100%; }
-  div#alsok .col-6.alsok-img .img2 { width: 25%; }
-  div#alsok .col-6.alsok-r { margin-top: 49px; padding: 0; line-height: 25px; text-align: center; order: 1; flex: 0 0 100%; max-width: 100%; }
-  div#alsok .col-6.alsok-r p { padding: 20px !important; }
-  div#alsok .col-6.alsok-r span { font-family: "HiraKakuProN-W3"; font-size: 20px; color: #535353; }
+  div#alsok a img { padding: 0 13px; }
+  div#alsok .col-6.alsok-img { flex: 0 0 100%; max-width: 100%; order: 2; margin-left: -12px !important; }
+  div#alsok .col-6.alsok-img .img1 { width: 100%; }
+  div#alsok .col-6.alsok-img .img2 { width: 26%; }
+  div#alsok .alsok-r { margin: 0 !important; padding: 0 15px; line-height: 25px; text-align: center; order: 1; flex: 0 0 100%; max-width: 100%; }
+  div#alsok .alsok-r p { padding: 20px !important; }
+  div#alsok .alsok-r span { font-family: "HiraKakuProN-W3"; font-size: 20px; color: #535353; }
   /* End Alsok */
   /* start contact */
   #top { display: none; }
   #contact .contacttext { margin: 0 20px !important; }
   #contact .col-4 { flex: 0 0 100%; max-width: 100%; }
-  main #contact .contact-r .col-4 .email { margin-top: 0px; margin-bottom: 36px; }
-  main #contact .contact-r .col-4 .email p { margin-left: 0; }
+  main #contact .contact-r { padding-left: 15px; padding-right: 15px; }
+  main #contact .contact-r .col-4.mar-mail { margin-top: 66px; margin-bottom: 85px; }
+  main #contact .contact-r .col-4.mar-mail p { margin-left: 0; }
   /* end contact */
-  /* StARt footer */
+  /* Start footer */
   footer .aa .menu1 { text-align: center; display: inline; padding: 26px 0; }
   footer .aa .menu1 li a p { font-family: "HiraKakuProN-W3" !important; color: #212121; font-size: 16px; }
   /* End footer */
@@ -308,22 +309,19 @@ div#services .table-content td { background-color: #fff; color: #111111; padding
   /* --End slide-- */
   #topbar header div.col-7.phone .email a:before, main #contact .contact-r .col-4 .email a:before, .bg-service .ser .col-8 .email a:before { margin-left: 0 !important; } }
 @media only screen and (max-width: 1125px) { #top { margin-right: 5px; padding: 14px 5px; } }
-@media screen and (max-width: 320px) { /*start header */
-  #topbar header img { width: 85% !important; }
-  .new-content .new-l a { top: 1142px; }
-  /*end service */
-  /*start service */
+@media screen and (max-width: 500px) { /*start service */
   #service .ser-main .col-4 { margin: 0 0 21px !important; flex: 0 0 100% !important; max-width: 100% !important; }
   #service .ser-main .col-4 .cha { width: 210px !important; height: 216px !important; }
   #service .ser-main .col-4 .cha .nd { width: 100% !important; height: 100% !important; }
+  /*end service */ }
+@media screen and (max-width: 350px) { /*start header */
+  #topbar header img { width: 85% !important; }
+  .new-content .new-l a { top: 482px !important; }
   /*end service */
   /* Start contact */
   main #contact .contact-r .col-4 .mar-mail { margin: 61px 0 44px 0 !important; }
   main #contact .contact-r .col-4 .mar-mail .email { margin-top: 0px; margin-bottom: 36px; width: 96%; }
   /* End contact */
-  /* Start New */
-  .new-content .new-l a { top: 1110px; }
-  /* End New */
   /* ------------tv - */
   .bg-service div#main-service .ser .col-8 a::before { margin-left: 0px; } }
 

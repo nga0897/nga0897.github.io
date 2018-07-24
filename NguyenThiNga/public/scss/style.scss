@@ -134,25 +134,7 @@ span#colorye{
     }
 }
 
-#top{
-    margin-right: 202px;
-    float: right;
-    margin-top: -174px;
-    width: 80px;
-    cursor: pointer;
-    padding: 14px 5px 0px;
-    background-color: #fff;
-    color: #0f5c9b;
-    height: 80px;
-    font-weight: 700;
-    .icon{
-        text-align: center;
-    }
-    .icon:before{
-        padding: 10px 0px;
-        content: url('../images/pagetop.png');
-    }
-}a, a:hover, a:focus {
+a, a:hover, a:focus {
     text-decoration: none;
     color: #000;
 }
@@ -160,32 +142,15 @@ span#colorye{
     max-width: 100%;
     height: auto;
 }
-.bar-block{
-    background-color: #0e5b9a;
-    display: none;
-    .menu-li{
-        width: 100%;
-        padding: 59px 39px;
-        .bar-item{
-            padding: 10px 0;
-            border-top: dotted;
-            white-space: normal;
-            display: block;
-            color: #ffffff;
-            font-size: 20px;
-            .icon-r{
-                font-size: 26px;
-                margin-top: -4px;
-                margin-right: 8px;
-                &:before{
-                    content: url('../images/icon-right.png');
-                }
-            }
-        }
-        #last{
-           border-bottom: dotted; 
-        }
-    }
+#pagetop{
+  position:fixed;bottom:50px;
+  right:40px; z-index:9999; 
+  display:none;
+  cursor:pointer;
+    -moz-border-radius:50%;
+    -ms-border-radius:50%;
+    -o-border-radius:50%;
+    -webkit-border-radius:50%;
 }
 
 @import 'header';

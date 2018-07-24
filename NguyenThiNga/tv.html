@@ -24,7 +24,7 @@
                             <a href="tel:0453413600">
                                 <img src="public/images/number-phone.png" alt="phone" />
                             </a>
-                            <span class="text-center">営業時間 9：00～18：00　定休日 業時 業時間 間</span>
+                            <span class="text-center">営業時間 9：00～18：00　定休日 土・日・祝日</span>
                         </div>
                         <div class="col-6 mar-auto">
                             <div class="email">
@@ -83,7 +83,7 @@
     </div>
     <!-- End Menu -->
     <!-- Start menu-responsive -->
-    <div id="xx" class="container bar-block">
+    <div id="xx" class="nav-sm bar-block">
         <div class="menu-li">
             <a href="#" class="bar-item">
                 <i class="icon-r"></i>
@@ -284,7 +284,7 @@
                         <a href="tel:0453413600">
                             045-341-3600
                         </a>
-                        <span class="text-center">営業時間 9：00～18：00　定休日 業時 業時間 間</span>
+                        <span class="text-center">営業時間 9：00～18：00　定休日 土・日・祝日</span>
                     </div>
                     <div class="col-4 mar-mail">
                         <div class="email">
@@ -364,13 +364,14 @@
     <!-- start script menu -->
     <script>
         function myFunction() {
-            var x = document.getElementById("xx");
-            if (x.style.display === "none") {
-                x.style.display = "block";
+            var x = document.getElementById('xx')
+            if (x.classList[1] == 'bar-block') {
+                x.classList.remove('bar-block');
+                x.classList.add('bar-block1');
             } else {
-                x.style.display = "none";
+                x.classList.remove('bar-block1');
+                x.classList.add('bar-block');
             }
-
             var ico = document.getElementById('fa');
             if (ico.className == 'fa-fas') {
                 ico.classList.remove('fa-fas');
