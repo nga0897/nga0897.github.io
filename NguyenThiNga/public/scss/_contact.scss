@@ -5,11 +5,11 @@ main #contact{
     background-size: cover;
     .contacttext{
         text-align: center;
-        margin: 0 205px;
+        margin: 16px 228px;
         p{
             font-size: 24px;
             @extend %title-blue;
-            padding: 6px 46px !important;
+            padding: 6px 7px ;
             letter-spacing: 2px;
             margin: 32px 0px;
             cursor: pointer;
@@ -29,11 +29,10 @@ main #contact{
     }
     .contact-r{
     .col-4.phone{
-        padding-bottom: 21px;
         a{
             @extend %phone;
             &:before{
-            content: url('../images/icon-phone.png');
+                content: url('../images/icon-phone.png');
             }
             font-size:36px;
             font-family: Din-Bold;
@@ -46,7 +45,6 @@ main #contact{
     }
     .col-4.mar-mail{
         margin-top: 85px;
-        margin-bottom: 29px;
         .email{
             margin-top: -56px;
             @extend %btn-mail; 

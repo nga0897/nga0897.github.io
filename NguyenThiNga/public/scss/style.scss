@@ -1,6 +1,5 @@
 @import 'fonts';
 
-
 $Mei: 'Meiryo';
 $Mei-B:'Meiryob';
 $Din-B:'Din-Bold';
@@ -49,7 +48,6 @@ body{
 .mar-auto{
     margin: auto;
 }
-
 a{
     text-decoration: none;
 }
@@ -68,6 +66,7 @@ span#colorye{
 .hidden{
     visibility: hidden;
 }
+/* btn mail */
 %btn-mail{
     padding: 14px;
     transition: all .5s;
@@ -81,9 +80,9 @@ span#colorye{
         font-family: $Mei-B !important;
         margin-left: 44px;
     }
-    a:before{
+    p:before{
+        margin-left: -37px;
         margin-top: 2px;
-        margin-left: 8px;
         background-repeat: no-repeat;
         position: absolute;
         width: 20px;
@@ -94,7 +93,8 @@ span#colorye{
     &:hover{
         opacity: .8;
     }
-}
+}/* btn mail */
+/* menu p */
 %menu-p{
     p:first-child{
         font-family: $Shin-B; 
@@ -108,6 +108,8 @@ span#colorye{
         text-transform: uppercase;
     }
 }
+/* menu p */
+/* btn blue */
 %btn-blue{
     transition: all .5s;
     background:#0f5c9b;
@@ -122,10 +124,14 @@ span#colorye{
         opacity: 0.8
     }
 }
+/* btn blue */
+/* title blue */
 %title-blue{
     border: 0.01rem solid #fff;
     color: #fff;    
 }
+/* title blue */
+/* phone */
 %phone{
     padding-top: 18px;
     display: block;
@@ -133,7 +139,7 @@ span#colorye{
         font-family: $Mei;
     }
 }
-
+/* phone */
 a, a:hover, a:focus {
     text-decoration: none;
     color: #000;

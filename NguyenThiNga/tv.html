@@ -7,6 +7,7 @@
     <title>Tv</title>
     <link rel="" href="public/images/logo.png">
     <link rel="stylesheet" href="public/css/style.css">
+    <script src="public/js/jquery.min.js"></script>
 </head>
 <body>
     <!-- Start Header -->
@@ -14,7 +15,7 @@
         <header class="container wrap-page">
             <div class="row">
                 <div class="col-5 logo">
-                    <a href="#">
+                    <a href="index.html">
                         <img src="public/images/logo.png" alt="logo">
                     </a>
                 </div>
@@ -104,7 +105,7 @@
             <a href="#" class="bar-item" id="last">
                 <i class="icon-r"></i>
                 <span>集合住宅用テレビ
-                    <br/>共同受信施設保守サービス</span>
+                <br/>共同受信施設保守サービス</span>
             </a>
         </div>
     </div>
@@ -120,7 +121,7 @@
         <div class="line">
             <ol class="breadcrumb wrap-page">
                 <li class="breadcrumb-item">
-                    <a href="#">TOP</a>
+                    <a href="index.html">TOP</a>
                 </li>
                 <li class="breadcrumb-item active"> >&nbsp; 合住宅用テレビ共同受信施設保守サービス
                 </li>
@@ -132,7 +133,7 @@
             <div class=" container wrap-page ">
                 <div class="row sers-title text-center">
                     <span>サービス概要</span>
-                    <img src="public/images/chamcham.png" class="mar-auto">
+                    <img src="public/images/chamcham.png" alt="#" class="mar-auto">
                     <p>テレビ共同受信施設が故障した際は
                         <br/>出張費、部品代、調整費等をいただかずトラブルを解決いたします。
                     </p>
@@ -148,9 +149,9 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td valign="top" class="td1">テキストテキスト</td>
-                                <td valign="top" class="td2">○万円（税抜）～</td>
-                                <td valign="top" class="td3">テキストテキストテキストテキストテキストテキストテキス トテキストテキスト</td>
+                                <td class="td1">テキストテキスト</td>
+                                <td class="td2">○万円（税抜）～</td>
+                                <td class="td3">テキストテキストテキストテキストテキストテキストテキス トテキストテキスト</td>
                             </tr>
                         </tbody>
                     </table>
@@ -163,15 +164,17 @@
             <div class="container wrap-page" id="main-service">
                 <div class="sers-title text-center">
                     <span>対応までの流れ</span>
-                    <img src="public/images/chamcham.png" alt=""  class=" mar-auto">
+                    <img src="public/images/chamcham.png" alt="service"  class="mar-auto">
                 </div>
                 <div class="row ser">
                     <div class="col-8">
                         <div class="ser-title">
-                            <img src="public/images/1.png" alt="">
-                            <span>受付</span>
+                            <img src="public/images/1.png" alt="ser-title">
+                            <a href="#">
+                                <span>受付</span>
+                            </a>
                             <p>来店またはお電話、メールにて受付しております。
-                                <br/>お気軽にお問い合わせください。</p>
+                            <br/>お気軽にお問い合わせください。</p>
                         </div>
                         <div class="row">
                             <div class=" ser-phone text-center">
@@ -190,69 +193,87 @@
                         </div>
                     </div>
                     <div class="col-4">
-                        <img src="public/images/service9.png" alt="">
+                        <a href="#">
+                            <img src="public/images/service9.png" alt="service9">
+                        </a>
                     </div>
                 </div><!-- end ser1 -->
                 <div class="row ser">
                     <div class="col-8">
                         <div class="ser-title">
-                            <img src="public/images/2.png" alt="">
-                            <span>現地調査</span>
+                            <img src="public/images/2.png" alt="ser-title">
+                            <a href="#">
+                                <span>現地調査</span>
+                            </a>
                             <p>現地に訪問し、調査いたします。</p>  
                         </div>
                     </div>
-                    <div class="col-4">
-                        <img src="public/images/service7.png" alt="">
+                    <div class="col-4 h-img">
+                        <a href="#">
+                            <img src="public/images/service7.png" alt="service7">
+                        </a>
                     </div>
                 </div>
-                <!-- end 2 -->
+                <!-- end ser2 -->
                 <div class="row ser">
                     <div class="col-8">
                         <div class="ser-title">
-                            <img src="public/images/3.png" alt="">
-                            <span>見積提出</span>
+                            <img src="public/images/3.png" alt="ser-title">
+                            <a href="#">
+                                <span>見積提出</span>
+                            </a>
                             <p>来店またはお電話、メールにて受付しております。
                                 <br/><a href="#">ここまでは無料</a>です。</p>
                         </div>
                     </div>
-                    <div class="col-4">
-                        <img src="public/images/service10.png" alt="">
+                    <div class="col-4 h-img">
+                        <a href="#">
+                            <img src="public/images/service10.png" alt="ser-title">
+                        </a>
                     </div>
                 </div>
-                <!-- end 3-->
+                <!-- end ser3-->
                 <div class="row ser">
                     <div class="col-8">
                         <div class="ser-title">
-                            <img src="public/images/4.png" alt="">
-                            <span>契約締結</span>
+                            <img src="public/images/4.png" alt="ser-title">
+                            <a href="#">
+                                <span>契約締結</span>
+                            </a>
                             <p><a href="#">ご契約書にサインをいただきます。</a></p>
                         </div>
                     </div>
-                    <div class="col-4">
-                        <img src="public/images/service8.png" alt="">
+                    <div class="col-4 h-img">
+                        <a href="#">
+                            <img src="public/images/service8.png" alt="ser-title">
+                        </a>
                     </div>
                 </div>
-                <!-- end 4-->
+                <!-- end ser4-->
                 <div class="row ser">
                     <div class="col-8">
                         <div class="ser-title">
-                            <img src="public/images/5.png" alt="">
-                            <span>メンテナンス開始</span>
+                            <img src="public/images/5.png" alt="ser-title">
+                            <a href="#">
+                                <span>メンテナンス開始</span>
+                            </a>
                             <p>
                                 <a href="#">メンテナンスを開始いたします。<br/>安心してお任せください。</a>
                             </p>
                         </div>
                     </div>
-                    <div class="col-4">
-                        <img src="public/images/service11.png" alt="">
+                    <div class="col-4 h-img">
+                        <a href="#">
+                            <img src="public/images/service11.png" alt="ser-title">
+                        </a>
                     </div>
                 </div>
-                <!-- end 5-->
+                <!-- end ser5-->
             </div>
         </div>
         <!-- End main-service -->
         <div class="row wrap-page slide">
-            <div class="text-center mar-auto">
+            <div class="text-center slide-title">
                 <a href="#">
                     <p>テレビのトラブルは突然おこります！</p>
                 </a>
@@ -294,14 +315,8 @@
                         </div>
                     </div>
                     <div class="col-2">
-        
                     </div>
                 </div>
-            </div>
-            <div id="top">
-                <div class="icon">
-                </div>
-                <div class="cla"> PAGE TOP</div>
             </div>
         </div>
         <!-- End Contact -->
@@ -309,7 +324,7 @@
         <!-- End Main -->
     <!-- Start Footer -->
     <footer class="container">
-        <div class="aa">
+        <div class="bg-footer">
             <div class="wrap-page row">
                 <ul class="menu1">
                     <li>
@@ -318,37 +333,37 @@
                         </a>
                     </li>
                     <li>
-                        <a href="">
+                        <a href="#">
                             <p>新着情報</p>
                         </a>
                     </li>
                     <li>
-                        <a href="">
+                        <a href="#">
                             <p>会社案内</p>
                         </a>
                     </li>
                     <li>
-                        <a href="">
+                        <a href="#">
                             <p>会社案内</p>
                         </a>
                     </li>
                     <li>
-                        <a href="">
+                        <a href="#">
                             <p>テレビ共聴設備概要　</p>
                         </a>
                     </li>
                     <li>
-                        <a href="" id="bor-l">
+                        <a href="#" id="bor-l">
                             <p>集合住宅用テレビ共同受信施設保守サービス</p>
                         </a>
                     </li>
                     <li>
-                        <a href="">
+                        <a href="#">
                             <p>プライバシーポリシー</p>
                         </a>
                     </li>
                     <li>
-                        <a href="">
+                        <a href="#">
                             <p>お問い合わせ</p>
                         </a>
                     </li>
@@ -384,5 +399,22 @@
         }
     </script>
     <!-- End script menu -->
+    <!-- Start script pagetop -->
+    <script>
+        $(document).ready(function () {
+            $('body').append('<div id="pagetop" title="Back to Top"><img src="public/images/pagetop.png"></div>');
+            $(window).scroll(function () {
+                if ($(window).scrollTop() > 100) {
+                    $('#pagetop').fadeIn();
+                } else {
+                    $('#pagetop').fadeOut();
+                }
+            });
+            $('#pagetop').click(function () {
+                $('html, body').animate({ scrollTop: 0 }, 500);
+            });
+        });
+    </script>
+    <!-- End script pagetop -->
 </body>
 </html>

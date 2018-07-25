@@ -56,24 +56,34 @@ span#colorye { color: yellow !important; }
 
 .hidden { visibility: hidden; }
 
+/* btn mail */
 #topbar header div.col-7.phone .email, main #contact .contact-r .col-4.mar-mail .email, .bg-service .ser .col-8 .email { padding: 14px; transition: all .5s; margin: auto; background-color: #ffed4d; }
 #topbar header div.col-7.phone .email a, main #contact .contact-r .col-4.mar-mail .email a, .bg-service .ser .col-8 .email a { font-size: 14px; color: #fd7e00; }
 #topbar header div.col-7.phone .email p, main #contact .contact-r .col-4.mar-mail .email p, .bg-service .ser .col-8 .email p { font-family: "Meiryob" !important; margin-left: 44px; }
-#topbar header div.col-7.phone .email a:before, main #contact .contact-r .col-4.mar-mail .email a:before, .bg-service .ser .col-8 .email a:before { margin-top: 2px; margin-left: 8px; background-repeat: no-repeat; position: absolute; width: 20px; height: 16px; content: ''; background-image: url(../images/icon-email.png); }
+#topbar header div.col-7.phone .email p:before, main #contact .contact-r .col-4.mar-mail .email p:before, .bg-service .ser .col-8 .email p:before { margin-left: -37px; margin-top: 2px; background-repeat: no-repeat; position: absolute; width: 20px; height: 16px; content: ''; background-image: url(../images/icon-email.png); }
 #topbar header div.col-7.phone .email:hover, main #contact .contact-r .col-4.mar-mail .email:hover, .bg-service .ser .col-8 .email:hover { opacity: .8; }
 
+/* btn mail */
+/* menu p */
 .menu li a p:first-child, .new-content .new-l p:first-child, #service .ser-title p:first-child { font-family: "ShinGoPro-DeBold"; color: #000; font-size: 14px; }
 .menu li a p:nth-child(2), .new-content .new-l p:nth-child(2), #service .ser-title p:nth-child(2) { color: #0e5b9a; font-family: "Din-Bold" !important; font-size: 12px; text-transform: uppercase; }
 
+/* menu p */
+/* btn blue */
 .new-content .new-l .btn-blue, #service .ser-main div.col-4 .cha .nd a.btn-blue { transition: all .5s; background: #0f5c9b; color: #ffffff; font-size: 16px; font-family: "Meiryo"; }
 .new-content .new-l .btn-blue:before, #service .ser-main div.col-4 .cha .nd a.btn-blue:before { content: url("../images/icon-right.png"); padding-right: 10px; }
 .new-content .new-l .btn-blue:hover, #service .ser-main div.col-4 .cha .nd a.btn-blue:hover { opacity: 0.8; }
 
+/* btn blue */
+/* title blue */
 main #contact .contacttext p { border: 0.01rem solid #fff; color: #fff; }
 
+/* title blue */
+/* phone */
 main #contact .contact-r .col-4.phone a, .bg-service .ser .col-8 .ser-phone a { padding-top: 18px; display: block; }
 main #contact .contact-r .col-4.phone a a, .bg-service .ser .col-8 .ser-phone a a { font-family: "Meiryo"; }
 
+/* phone */
 a, a:hover, a:focus { text-decoration: none; color: #000; }
 
 .img-responsive { max-width: 100%; height: auto; }
@@ -84,7 +94,8 @@ a, a:hover, a:focus { text-decoration: none; color: #000; }
 #topbar header { padding: 20px 8px; }
 #topbar header div.col-7.phone { padding-top: 18px; }
 #topbar header div.col-7.phone a { display: block; }
-#topbar header div.col-7.phone a:before { content: url("../images/icon-phone-blue.png"); }
+#topbar header div.col-7.phone a img { margin-left: 27px; }
+#topbar header div.col-7.phone:before { position: absolute; content: url(../images/icon-phone-blue.png); padding-left: 23px; }
 #topbar header div.col-7.phone span { font-family: "Meiryo" !important; color: #000000; font-size: 10px; }
 #topbar header .topnav { display: none; }
 
@@ -102,8 +113,8 @@ div.bar-block .menu-li { display: none; }
 .new-content { margin: 80px 0; padding: 16px 0; border: 1px solid #ccc; }
 .new-content .new-l { padding-top: 23px; min-height: 161px; border-right: 1px solid #ccc; }
 .new-content .new-l p { line-height: 2rem; }
-.new-content .new-l p:first-child { font-size: 20px !important; }
-.new-content .new-l p:nth-child(2) { font-size: 12px !important; margin: 7px 0px 16px 0px; letter-spacing: 2px; }
+.new-content .new-l p:first-child { cursor: pointer; font-size: 20px !important; }
+.new-content .new-l p:nth-child(2) { cursor: pointer; font-size: 12px !important; margin: 7px 0px 16px 0px; letter-spacing: 2px; }
 .new-content .new-l .btn-blue { padding: 8px 20px; }
 .new-content .new-l .btn-blue:hover { opacity: 0.8; }
 .new-content .new-r { padding-left: 32px; padding-top: 24px; display: grid; }
@@ -136,24 +147,23 @@ main #alsok .alsok-r span { font-family: Meiryo; color: #545454; font-size: 16px
 main #alsok .alsok-r a img { padding-top: 5px; }
 
 main #contact { background-image: url(../images/bg-contact.png); background-position: center; background-repeat: no-repeat; background-size: cover; }
-main #contact .contacttext { text-align: center; margin: 0 205px; }
-main #contact .contacttext p { font-size: 24px; padding: 6px 46px !important; letter-spacing: 2px; margin: 32px 0px; cursor: pointer; }
+main #contact .contacttext { text-align: center; margin: 16px 228px; }
+main #contact .contacttext p { font-size: 24px; padding: 6px 7px; letter-spacing: 2px; margin: 32px 0px; cursor: pointer; }
 main #contact .contactcontent { text-align: center; padding: 0 18px; width: 100%; }
 main #contact .contactcontent span { letter-spacing: 1px; font-family: Meiryo; color: #ffffff; font-size: 16px; line-height: 26px; }
-main #contact .contact-r .col-4.phone { padding-bottom: 21px; }
 main #contact .contact-r .col-4.phone a { font-size: 36px; font-family: Din-Bold; color: #ffffff; }
 main #contact .contact-r .col-4.phone a:before { content: url("../images/icon-phone.png"); }
 main #contact .contact-r .col-4.phone span { color: #ffffff; font-size: 11px; }
-main #contact .contact-r .col-4.mar-mail { margin-top: 85px; margin-bottom: 29px; }
+main #contact .contact-r .col-4.mar-mail { margin-top: 85px; }
 main #contact .contact-r .col-4.mar-mail .email { margin-top: -56px; width: 269px; height: 50px; }
 
-footer .aa { background-color: #cccccc; }
-footer .aa .menu1 { display: block; padding: 30px 102px 30px; }
-footer .aa .menu1 li { padding-bottom: 9px; display: inline-block; }
-footer .aa .menu1 li a { border-right: 0.05rem solid #898989; display: inline-block; padding: 0px 36px; }
-footer .aa .menu1 li a p { font-family: 'Meriyo' !important; font-size: 14px; color: #222222; }
-footer .aa .menu1 li a#bor-l { margin-left: -22px; border-left: 1px solid #898989; }
-footer .aa .menu1 li:first-child a { border-left: 0.05rem solid #898989; }
+footer .bg-footer { background-color: #cccccc; }
+footer .bg-footer .menu1 { display: block; padding: 30px 102px 30px; }
+footer .bg-footer .menu1 li { padding-bottom: 9px; display: inline-block; }
+footer .bg-footer .menu1 li a { border-right: 0.05rem solid #898989; display: inline-block; padding: 0px 36px; }
+footer .bg-footer .menu1 li a p { font-family: 'Meriyo' !important; font-size: 14px; color: #222222; }
+footer .bg-footer .menu1 li a#bor-l { margin-left: -22px; border-left: 1px solid #898989; }
+footer .bg-footer .menu1 li:first-child a { border-left: 0.05rem solid #898989; }
 
 .copyright { padding: 15px; }
 .copyright p { font-family: Meryo !important; font-size: 14px; }
@@ -192,30 +202,32 @@ div#services .table-content td { background-color: #fff; color: #111111; padding
 .bg-service div#main-service .sers-title { margin-bottom: 46px; cursor: pointer; display: block; }
 .bg-service div#main-service .sers-title span { color: #111111; font-family: Meiryo; font-size: 26px; }
 .bg-service div#main-service .sers-title img { display: block; padding: 10px 228px; }
-.bg-service .ser { background-color: #ffffff; margin-top: 30px; }
+.bg-service .ser { background-color: #ffffff; margin-bottom: 30px; }
 .bg-service .ser .col-8 { padding-bottom: 25px; }
-.bg-service .ser .col-8 .ser-title { padding: 15px 0 30px 15px; margin-bottom: -13px; }
-.bg-service .ser .col-8 .ser-title img { margin-bottom: -15px; }
-.bg-service .ser .col-8 .ser-title span { cursor: pointer; padding: 0 15px; color: #0e5b9a; font-size: 24px; font-family: 'ShinGoPro-Regular'; }
-.bg-service .ser .col-8 .ser-title p { color: #111111; font-family: Meiryo; font-size: 16px; padding: 25px 0px; }
+.bg-service .ser .col-8 .ser-title { padding: 25px 25px 0px 25px; }
+.bg-service .ser .col-8 .ser-title img { padding-right: 12px; }
+.bg-service .ser .col-8 .ser-title span { color: #0e5b9a; font-size: 24px; font-family: 'ShinGoPro-Regular'; position: absolute; padding-top: 0; }
+.bg-service .ser .col-8 .ser-title p { color: #111111; font-family: Meiryo; font-size: 16px; padding: 30px 15px 30px 0; }
 .bg-service .ser .col-8 .ser-title a { color: #0e5b9a; font-family: Meiryob; font-size: 16px; }
 .bg-service .ser .col-8 .ser-title:before { margin-left: 25px; }
-.bg-service .ser .col-8 .ser-phone { width: 278px; border: 1px solid #0e5b9a; margin-left: 36px; }
+.bg-service .ser .col-8 .ser-phone { width: 278px; border: 1px solid #0e5b9a; margin-left: 25px; }
 .bg-service .ser .col-8 .ser-phone a { padding-top: 0px !important; font-size: 25px; font-family: Din-Bold; color: #0f5c9b; padding-left: 24px; }
-.bg-service .ser .col-8 .ser-phone:before { float: left; content: url(../images/icon-phone-blue.png); margin-right: -68px; padding-top: 3px; margin-left: 34px; }
+.bg-service .ser .col-8 .ser-phone a:before { position: absolute; content: url(../images/icon-phone-blue.png); padding-top: 3px; margin-left: -35px; }
 .bg-service .ser .col-8 .ser-phone span { color: #0e5b9a; font-size: 10px !important; font-family: Meiryo; }
+.bg-service .ser .col-4 { padding-bottom: 25px; }
 .bg-service .ser .col-4 img { padding: 29px 32px 0px 6px; }
 
 /* --End main-service -- */
-/*  */
-.slide { padding: 0 15px; height: 300px; }
+/* --Start Slide-- */
+.slide .slide-title { margin: 60px auto; }
 .slide p { margin-bottom: 60px; padding: 1px 37px; border: 1px solid #0f5c9b; color: #0f5c9b; font-size: 24px; }
 .slide span { font-size: 16px; font-family: Meiryo; color: #525252; }
 .slide span a { color: #0f5c9a; font-size: 22px; }
 
+/* --End Slide-- */
 @media screen and (max-width: 768px) { body { min-width: 133px; }
   .wrap-page { width: 100%; }
-  #pagetop { display: none !important; }
+  #pagetop { display: none !important; visibility: hidden !important; }
   /* start header */
   #topbar header { /* Start Menu-resposive */ /* End Menu-resposive */ }
   #topbar header .col-5 { flex: 0 0 80%; max-width: 80%; }
@@ -230,7 +242,7 @@ div#services .table-content td { background-color: #fff; color: #111111; padding
   div.menu-sx { display: none; }
   div.bar-block { display: none; }
   div.bar-block1 { display: block; }
-  .nav-sm { position: absolute !important; z-index: 9999; width: 100%; min-height: 826px; background-color: #0e5b9a; display: none; }
+  .nav-sm { position: absolute !important; z-index: 9999; width: 100%; min-height: 750px; background-color: #0e5b9a; display: none; }
   .nav-sm .menu-li { width: 100%; padding: 59px 39px; }
   .nav-sm .menu-li .bar-item { padding: 10px 0; border-top: dotted; white-space: normal; display: block; color: #ffffff; font-size: 20px; }
   .nav-sm .menu-li .bar-item .icon-r { font-size: 26px; margin-top: -4px; margin-right: 8px; }
@@ -246,7 +258,7 @@ div#services .table-content td { background-color: #fff; color: #111111; padding
   .new-content .new-l { border-right: none; }
   .new-content .new-l p:first-child { font-size: 30px !important; font-family: "HiraKakuProN-W6"; }
   .new-content .new-l p:nth-child(2) { font-family: "MyriadPro-Regular" !important; font-size: 16px !important; cursor: pointer; }
-  .new-content .new-l a { position: absolute !important; top: 427px !important; margin: 15px -79px; }
+  .new-content .new-l a { position: absolute !important; top: 415px !important; margin: 15px -79px; }
   .new-content .col-9 { flex: 0 0 100%; max-width: 100%; }
   .new-content .col-9 .new-r { padding-right: 29px; padding-bottom: 50px; margin-top: -66px; }
   .new-content .col-9 .new-r span { border-top: dotted #cccccc; padding: 15px 5px; font-family: "HiraKakuProN-W3"; font-size: 20px; }
@@ -270,18 +282,45 @@ div#services .table-content td { background-color: #fff; color: #111111; padding
   /* End Alsok */
   /* start contact */
   #top { display: none; }
-  #contact .contacttext { margin: 0 20px !important; }
+  #contact .contacttext { margin: 25px 15px 20px 15px !important; }
+  #contact .contacttext p { padding: 15px 25px !important; }
   #contact .col-4 { flex: 0 0 100%; max-width: 100%; }
   main #contact .contact-r { padding-left: 15px; padding-right: 15px; }
   main #contact .contact-r .col-4.mar-mail { margin-top: 66px; margin-bottom: 85px; }
   main #contact .contact-r .col-4.mar-mail p { margin-left: 0; }
   /* end contact */
   /* Start footer */
-  footer .aa .menu1 { text-align: center; display: inline; padding: 26px 0; }
-  footer .aa .menu1 li a p { font-family: "HiraKakuProN-W3" !important; color: #212121; font-size: 16px; }
-  /* End footer */
-  /* ----------------------------------tv resposive------------------------ */
+  footer .bg-footer .menu1 { text-align: center; display: inline; padding: 26px; }
+  footer .bg-footer .menu1 li a p { font-family: "HiraKakuProN-W3" !important; color: #212121; font-size: 16px; }
+  /* End footer */ }
+@media only screen and (max-width: 768px) and (max-width: 1125px) { #top { margin-right: 5px; padding: 14px 5px; } }
+@media screen and (max-width: 768px) { /* --End media screen max-width:1125px-- */ }
+@media screen and (max-width: 768px) and (max-width: 500px) { /*start service */
+  #service .ser-main .col-4 { margin: 0 0 21px !important; flex: 0 0 100% !important; max-width: 100% !important; }
+  #service .ser-main .col-4 .cha { width: 210px !important; height: 216px !important; }
+  #service .ser-main .col-4 .cha .nd { width: 100% !important; height: 100% !important; }
+  /*end service */
+  /* ---Start slide- */
+  .slide .slide-title { margin: 30px 15px; }
+  .slide p { padding: 10px 25px; }
+  /* --End slide-- */ }
+@media screen and (max-width: 768px) { /* --End media screen max-width:500px-- */ }
+@media screen and (max-width: 768px) and (max-width: 350px) { /*start header */
+  #topbar header img { width: 85% !important; }
+  .new-content .new-l a { top: 482px !important; }
+  /*end header */
+  /* Start contact */
+  main #contact .contact-r .col-4 .mar-mail { margin: 61px 0 44px 0 !important; }
+  main #contact .contact-r .col-4 .mar-mail .email { margin-top: 0px; margin-bottom: 36px; width: 96%; }
+  /* End contact */ }
+@media screen and (max-width: 768px) { /* --End media screen max-width:350px-- */ }
+@media screen and (max-width: 768px) and (max-width: 680px) { /* --bg-service-- */
+  .bg-service .col-4.h-img { height: auto !important; }
+  /* --bg-service-- */ }
+@media screen and (max-width: 768px) { /* ----------------------------------tv resposive------------------------ */
+  /* --line-- */
   main .line { display: none; }
+  /* --line-- */
   /* Start tv-banner */
   .tv-banner a { padding: 0 21px; text-align: center; }
   /* End tv-banner */
@@ -294,36 +333,17 @@ div#services .table-content td { background-color: #fff; color: #111111; padding
   #services .table-content { padding: 0 15px; }
   /* --End services-- */
   /* -- Start bg-service-- */
+  .bg-service { padding-bottom: 0; }
   .bg-service div#main-service { padding: 15px; margin-top: 66px; }
   .bg-service div#main-service .sers-title img { padding: 0; }
   .bg-service div#main-service .ser .col-8 { padding-bottom: 25px; flex: 0 0 100%; max-width: 100%; }
   .bg-service div#main-service .ser .col-8 .ser-title { padding: 15px 0 0 15px; }
-  .bg-service div#main-service .ser .col-8 a::before { margin-left: 50px; }
-  .bg-service div#main-service .ser .col-8 p { margin-left: 0; }
-  .bg-service div#main-service .ser .col-8 .ser-phone { width: 91%; margin: auto; }
-  .bg-service div#main-service .ser .col-8 .ser-mail { width: 91%; margin-top: 15px; }
+  .bg-service div#main-service .ser .col-8 .ser-phone { width: 94%; margin: auto; }
+  .bg-service div#main-service .ser .col-8 .ser-mail { width: 94%; margin-top: 15px; }
   .bg-service div#main-service .ser .col-4 { flex: 0 0 100%; max-width: 100%; text-align: center; }
-  .bg-service div#main-service .ser .col-4 img { width: 91%; padding: 0 0 11px 0; }
-  /* -- End bg-service-- */
-  /* ---Start slide- */
-  .slide p { margin: 20px !important; }
-  /* --End slide-- */
-  #topbar header div.col-7.phone .email a:before, main #contact .contact-r .col-4 .email a:before, .bg-service .ser .col-8 .email a:before { margin-left: 0 !important; } }
-@media only screen and (max-width: 1125px) { #top { margin-right: 5px; padding: 14px 5px; } }
-@media screen and (max-width: 500px) { /*start service */
-  #service .ser-main .col-4 { margin: 0 0 21px !important; flex: 0 0 100% !important; max-width: 100% !important; }
-  #service .ser-main .col-4 .cha { width: 210px !important; height: 216px !important; }
-  #service .ser-main .col-4 .cha .nd { width: 100% !important; height: 100% !important; }
-  /*end service */ }
-@media screen and (max-width: 350px) { /*start header */
-  #topbar header img { width: 85% !important; }
-  .new-content .new-l a { top: 482px !important; }
-  /*end service */
-  /* Start contact */
-  main #contact .contact-r .col-4 .mar-mail { margin: 61px 0 44px 0 !important; }
-  main #contact .contact-r .col-4 .mar-mail .email { margin-top: 0px; margin-bottom: 36px; width: 96%; }
-  /* End contact */
-  /* ------------tv - */
-  .bg-service div#main-service .ser .col-8 a::before { margin-left: 0px; } }
+  .bg-service div#main-service .ser .col-4 img { width: 94%; padding: 0 0 11px 0; }
+  .bg-service div#main-service .ser .col-4.h-img { height: 395px; }
+  /* -- End bg-service-- */ }
+/* --End media screen max-width:768px-- */
 
 /*# sourceMappingURL=style.css.map */
